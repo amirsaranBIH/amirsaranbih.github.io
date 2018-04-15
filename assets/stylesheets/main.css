@@ -108,7 +108,7 @@ img {
 }
 
 #hero.hero-secondary .hero-content {
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, -15%);
 }
 
 .hero-content {
@@ -116,7 +116,7 @@ img {
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -40%);
   text-align: center;
 }
 
