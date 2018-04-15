@@ -1,0 +1,208 @@
+/* MEDIUM */
+@media (min-width: 425px) {
+  h1 {font-size: 2.074em;}
+
+  h2 {font-size: 1.728em;}
+
+  h3 {font-size: 1.44em;}
+
+  small {font-size: 0.833em;}
+
+  #hero {
+    height: 55vh;
+    background-image: url('../images/background/medium/development.jpg');
+  }
+
+  #cta {
+    background-image: url('../images/background/medium/science.jpg');
+  }
+
+  .project-category {
+    width: 75%;
+    margin: 15px auto;
+  }
+}
+
+/* LARGE */
+@media (min-width: 768px) {
+  h1 {font-size: 2.441em;}
+
+  h2 {font-size: 1.953em;}
+
+  h3 {font-size: 1.563em;}
+
+  small {font-size: 0.8em;}
+
+  #hero {
+    height: 65vh;
+    background-image: url('../images/background/large/development.jpg');
+  }
+
+  .hero-content {transform: translate(-50%, -80%);}
+
+  .header-navigation {
+    position: static;
+    background-color: initial;
+    transform: scale(1);
+    display: flex;
+  }
+
+  .header-navigation a:hover {
+    opacity: inherit;
+  }
+
+  .header-navigation a {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 0;
+  }
+
+  .header-navigation li:first-of-type a {margin-left: 0;}
+
+  #menu-icon {display: none;}
+
+  #cta {
+    background-image: url('../images/background/large/science.jpg');
+  }
+
+  .section {padding: 75px 0;}
+
+  .project-categories a[tabindex="5"] {padding-bottom: 50px;}
+
+  .btn {padding: 15px 35px;}
+
+  .project-categories-list {
+    flex-direction: row;
+    position: relative;
+    bottom: 207.5px;
+    margin-bottom: -207.5px;
+  }
+
+  .project-category {
+    height: 400px;
+    flex-basis: 31%;
+  }
+
+  #features {
+    background-image: url('../images/background/large/vr.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+  }
+
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .feature {flex-basis: 48%;}
+
+  .skills-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill {
+    flex-basis: 31%;
+    margin-top: 0;
+  }
+
+  .skill:nth-of-type(odd) {
+    padding-top: 100px;
+  }
+
+  .testimonial-client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial-client-section p {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .testimonial-client-section img {
+    margin-right: 15px;
+  }
+
+  .footer-section-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex-basis: 30%;
+    margin-bottom: 0;
+  }
+
+  .list-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* EXTRA LARGE */
+@media (min-width: 1440px) {
+  h1 {font-size: 3.157em;}
+
+  h2 {font-size: 2.369em;}
+
+  h3 {font-size: 1.777em;}
+
+  small {font-size: 0.75em;}
+
+  .hero-content h2 {font-size: 1.424em;}
+
+  #hero {
+    height: 80vh;
+    background-image: url('../images/background/extra-large/development.jpg');
+  }
+
+  #cta {
+    background-image: url('../images/background/extra-large/science.jpg');
+  }
+
+  #features {
+    background-image: url('../images/background/extra-large/vr.jpg');
+  }
+
+  .wrapper {
+    max-width: 960px;
+    padding: 0;
+  }
+
+  .feature {flex-basis: 33.3333%;}
+
+  .feature img {
+    width: 50px;
+  }
+
+  .feature h3 {
+    font-size: 26px;
+  }
+
+  .feature:first-of-type, .feature:nth-of-type(3), .feature:nth-of-type(5) {padding-top: 150px;}
+
+  .features-content {position: relative;}
+
+  .features-image {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project {display: flex;}
+
+  .project-image {flex: 3;}
+
+  .project-info {
+    margin-left: 15px;
+    flex: 1;
+  }
+
+  .projects h2 {margin-bottom: 30px;}
+}
