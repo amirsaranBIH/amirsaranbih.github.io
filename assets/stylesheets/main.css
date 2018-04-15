@@ -218,7 +218,7 @@ img {
 .project-categories a[tabindex="5"] {
   display: inline-block;
   text-decoration: underline;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .svg {

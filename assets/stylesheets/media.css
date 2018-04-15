@@ -67,7 +67,7 @@
 
   .section {padding: 75px 0;}
 
-  .project-categories a[tabindex="5"] {padding-bottom: 50px;}
+  .project-categories a[tabindex="5"] {margin-bottom: 50px;}
 
   .btn {padding: 12px 30px;}
 
