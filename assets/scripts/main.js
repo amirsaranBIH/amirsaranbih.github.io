@@ -63,7 +63,7 @@ if (document.querySelector('.testimonials-slider .testimonial')) {
       if (!(counter === index)) {
         testimonial.style.display = 'none';
       } else {
-        testimonial.style.display = 'flex';
+        testimonial.style.display = 'block';
       }
     });
 
