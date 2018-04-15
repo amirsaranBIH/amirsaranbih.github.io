@@ -347,6 +347,14 @@ img {
   margin-left: 12px;
 }
 
+.media small a {
+  color: var(--blue);
+}
+
+.media small a:hover {
+  text-decoration: underline;
+}
+
 .media-section:first-child img {
   width: 32px;
 }
