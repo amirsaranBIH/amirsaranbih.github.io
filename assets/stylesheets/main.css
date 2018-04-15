@@ -116,7 +116,7 @@ img {
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   text-align: center;
 }
 
@@ -277,11 +277,7 @@ img {
 }
 
 .testimonial {
-  height: 150px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .testimonial-item {
