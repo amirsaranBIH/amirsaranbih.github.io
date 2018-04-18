@@ -1,0 +1,16 @@
+.breaking-news {
+  border-bottom: 1px solid $lineGrey;
+  padding: 25px 0;
+  margin-bottom: 15px;
+
+  p {
+    color: $black;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  span {
+    color: $pink;
+    font-weight: 900;
+  }
+}

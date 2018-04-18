@@ -1,0 +1,62 @@
+.aside-featured-list {
+  border-bottom: 1px solid $lineGrey;
+  padding-bottom: 15px;
+}
+
+.aside {
+  margin: 25px 0;
+  border-bottom: 1px solid $lineGrey;
+}
+
+.aside-preview {
+
+  h3 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .tag {
+    margin-bottom: 3px;
+  }
+
+  .created {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+}
+
+.aside-featured-preview {
+  position: relative;
+  bottom: 40px;
+  background-color: #fff;
+  padding: 8px 12px;
+  margin: 0 15px;
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .blog-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    .created {
+      margin-left: 5px;
+      font-size: 12px;
+    }
+
+    .tags {
+      justify-content: center;
+      display: flex;
+    }
+
+  }
+
+}

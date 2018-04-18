@@ -197,11 +197,11 @@
 
   .project {display: flex;}
 
-  .project-image {flex: 3;}
+  .project-image {flex: 5;}
 
   .project-info {
     margin-left: 15px;
-    flex: 1;
+    flex: 2;
   }
 
   .projects h2 {margin-bottom: 30px;}

@@ -1,0 +1,22 @@
+.section-header {
+
+  h2, h3 {
+    font-size: 27px;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+
+  .header-line {
+    width: 100%;
+    height: 7px;
+    background-color: $lineGrey;
+    margin-bottom: 35px;
+  }
+
+  .header-line div {
+    height: 7px;
+    width: 35px;
+    background-color: $pink;
+  }
+
+}

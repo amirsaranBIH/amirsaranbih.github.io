@@ -1,0 +1,103 @@
+.page-header {
+  box-shadow: 0 5px 18px 0 rgba(0, 1, 1, .18);
+  color: $black;
+}
+
+.header-top-section {
+  display: none;
+}
+
+.header-bottom-section {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-secondary-nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  transform-origin: 0 0;
+  transform: scale(0);
+  transition: transform .4s ease-out;
+}
+
+.header-secondary-nav a {
+  width: 100%;
+  color: #fff;
+  padding: 20px 0 20px 30px;
+  display: block;
+  background-color: $black;
+}
+
+.show-secondary-nav {
+  transform: scale(1);
+}
+
+.header-secondary-nav a:hover {
+  background-color: $footerLightGrey;
+}
+
+.header-social-media {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100%;
+  transform-origin: right top;
+  transform: scale(0);
+  transition: transform .4s ease-out;
+}
+
+.header-social-media ul {
+  display: flex;
+}
+
+.header-social-media li {
+  flex: 1;
+}
+
+.header-social-media a {
+  text-align: center;
+  padding: 22px 0;
+  width: 100%;
+  display: block;
+  color: #fff;
+  background-color: $black;
+}
+
+.show-social-media {
+  transform: scale(1);
+}
+
+.header-social-media a:hover {
+  background-color: $footerLightGrey;
+}
+
+.header-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-brand i {
+  color: #707070;
+  margin-right: 5px;
+}
+
+.header-brand span {
+  color: $pink;
+
+  span {
+    color: $black;
+  }
+}
+
+.mobile-icons i {
+  font-size: 25px;
+}
+
+#nav-icon {
+  margin-right: 25px;
+  font-size: 26px;
+}

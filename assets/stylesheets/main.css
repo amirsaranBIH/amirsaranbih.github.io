@@ -374,6 +374,10 @@ img {
   padding-bottom: 30px;
 }
 
+.project img {
+  border: 1px solid #e5e5e5;
+}
+
 .project p {
   margin-bottom: 10px;
 }

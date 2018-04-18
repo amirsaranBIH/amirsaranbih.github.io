@@ -1,0 +1,20 @@
+.page-footer {
+  background-color: $footerDarkGrey;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.page-footer-section ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.page-footer-section a {
+  color: #fff !important;
+  font-size: 12px;
+}
