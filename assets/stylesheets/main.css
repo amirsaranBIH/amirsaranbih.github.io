@@ -378,6 +378,32 @@ img {
   border: 1px solid #e5e5e5;
 }
 
+.project p a {
+  color: var(--blue);
+}
+
+.project-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.project-tags ul li {
+  margin-top: 5px;
+  padding: 2px 8px;
+  background-color: var(--lightBlue);
+  color: var(--white);
+  margin-right: 5px;
+}
+
+.project-tags ul li:last-of-type {
+  margin-right: 0;
+}
+
+.project p a:hover {
+  text-decoration: underline;
+}
+
 .project p {
   margin-bottom: 10px;
 }
