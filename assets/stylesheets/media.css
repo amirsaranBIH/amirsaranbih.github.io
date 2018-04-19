@@ -118,6 +118,10 @@
     align-items: center;
   }
 
+  .testimonial-client-section h3 {
+    text-align: left;
+  }
+
   .testimonial-client-section p {
     margin-bottom: 0;
     text-align: left;

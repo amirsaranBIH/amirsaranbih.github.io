@@ -282,10 +282,11 @@ img {
 
 .testimonial-item {
   text-align: center;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
-.testimonial p {
+.testimonial blockquote, .testimonial-item blockquote {
+  margin-bottom: 15px;
   font-style: italic;
 }
 
@@ -371,7 +372,7 @@ img {
 }
 
 .project {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .project img {
