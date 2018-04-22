@@ -71,5 +71,3 @@ $("#about-btn").on("click", function() {
 $("#share-btn").on("click", function() {
   $("#share-modul").fadeIn();
 });
-
-webview.getSettings().setMediaPlaybackRequiresUserGesture(false);

@@ -1,5 +1,5 @@
 //Random background generator
-var randomBackground = Math.floor(Math.random() * 5) + 1;
+var randomBackground = Math.ceil(Math.random() * 5);
 
 $("#headline").css("background-image", "url('assets/images/background" + randomBackground + ".png')");
 
