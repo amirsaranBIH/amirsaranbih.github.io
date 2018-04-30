@@ -24,7 +24,7 @@ html {font-size: 1em;}
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #010101;
 }
 
@@ -448,6 +448,11 @@ img {
 }
 .list-content ul li a:hover {
   text-decoration: underline;
+}
+
+.list-content ul li a[href="#"] {
+  text-decoration: none;
+  color: var(--lightBlue);
 }
 
 .skill-list h2 {
