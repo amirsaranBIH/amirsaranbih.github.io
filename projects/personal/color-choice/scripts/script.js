@@ -18,9 +18,9 @@ document.getElementById('max-selected-colors').innerText = maxNumberOfSelectedCo
 
 // Creating a RGB value
 function createRGB() {
-  var value1 = Math.floor(Math.random() * 255) + 1;
-  var value2 = Math.floor(Math.random() * 255) + 1;
-  var value3 = Math.floor(Math.random() * 255) + 1;
+  var value1 = Math.ceil(Math.random() * 255);
+  var value2 = Math.ceil(Math.random() * 255);
+  var value3 = Math.ceil(Math.random() * 255);
 
   // Constructing the RGB value
   var rgbValue = `rgb(${value1}, ${value2}, ${value3})`;
@@ -142,12 +142,12 @@ function removeSelectedColor() {
 
 // Copying to clipboard
 function copyToClipboard() {
-  var temp = document.createElement("input");
-  document.getElementsByTagName("body")[0].appendChild(temp);
+  var temp = document.createElement('input');
+  document.getElementsByTagName('body')[0].appendChild(temp);
   temp.value =  `rgb(${this.previousSibling.innerText})`;
   temp.select();
-  document.execCommand("copy");
-  document.getElementsByTagName("body")[0].removeChild(temp);
+  document.execCommand('copy');
+  document.getElementsByTagName('body')[0].removeChild(temp);
 }
 
 // Sliding animation with arrow on the chosen colors

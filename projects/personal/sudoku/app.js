@@ -4,11 +4,9 @@ var game = document.getElementById('game'),
     startButton = document.querySelector('button[name="start-time"]'),
     choseNumberModule = document.getElementById('chose-number');
 
-    var seconds = 0;
-    var minutes = 0;
-    var timePlaying = 0;
+var minutes, seconds, timePlaying = 0;
 
-    const numOfBoards = 9;
+const numOfBoards = 9;
 
 // Function for initializing the game
 function initGame() {

@@ -40,9 +40,7 @@ return {
     return makeCards();
   },
   // Gets the number of cards
-  getNumberOfCards() {
-    return numberOfCards;
-  }
+  getNumberOfCards: numberOfCards
 }
 
 }());
@@ -63,9 +61,7 @@ const DOM = {
 
 return {
   // Returns the DOM object
-  getDOM() {
-    return DOM;
-  },
+  getDOM: DOM,
   cardTemplate(array, index) {
     return `<div class="card" data-id="${array[index].id}"><img src="${array[index].image}" alt="Card ${array[index].id}"></div>`;
   },
@@ -101,11 +97,11 @@ return {
 // Controller
 var controller = (function(dataCtrl, UICtrl) {
 
-var DOM = UICtrl.getDOM();
+var DOM = UICtrl.getDOM;
 var cards = dataCtrl.makeCards();
 
 function setUpGame(cards) {
-  for (let i = 0; i < dataCtrl.getNumberOfCards(); i++) {
+  for (let i = 0; i < dataCtrl.getNumberOfCards; i++) {
     let cardTemplate = UICtrl.cardTemplate(cards, i);
     UICtrl.render(cardTemplate);
   }
