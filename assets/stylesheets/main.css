@@ -432,7 +432,8 @@ select {
     display: inline-block;
     padding: 8px 22px;
     background-color: var(--yellow);
-    font-weight: 700
+    font-weight: 700;
+    transition: all .2s ease;
 }
 
 #header,
@@ -447,9 +448,9 @@ select {
 }
 
 .btn:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05)
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 img {
@@ -556,7 +557,8 @@ img {
     flex-direction: column;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end
+    justify-content: flex-end;
+    transition: all .2s ease;
 }
 
 .project-category:hover {
