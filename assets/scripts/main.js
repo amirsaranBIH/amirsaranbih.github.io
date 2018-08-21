@@ -23,5 +23,14 @@ if (menuIcon.addEventListener('click', function() {
     }
 }
 if (document.querySelector('.testimonials-slider .testimonial')) {
+    var testimonials = Array.from(document.querySelectorAll('.testimonials-slider .testimonial'));
+    testimonials[1].style.display = 'none', testimonials[2].style.display = 'none';
+    var counter = 1;
 
+    function testimonialSlider() {
+        testimonials.forEach(function(e, t) {
+            e.style.display = counter !== t ? 'none' : 'block'
+        }), counter === testimonials.length - 1 ? counter = 0 : counter++
+    }
+    setInterval(testimonialSlider, 5e3)
 }
