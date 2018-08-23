@@ -1,0 +1,496 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4em;
+}
+
+p {
+  margin: .85em 0;
+  line-height: 1.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1064px; /* 1024px */
+  height: 100%;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: initial;
+  outline: none;
+  background: #00A86B;
+  background: -webkit-linear-gradient(to bottom, #50C878, #00A86B);
+  background: -webkit-gradient(linear, left top, left bottom, from(#50C878), to(#00A86B));
+  background: -webkit-linear-gradient(top, #50C878, #00A86B);
+  background: -o-linear-gradient(top, #50C878, #00A86B);
+  background: linear-gradient(to bottom, #50C878, #00A86B);
+  padding: 1em 2.5em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex--general {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header {
+  height: 65px;
+  position: absolute;
+  width: 100%;
+}
+
+.page-header-inner {
+  background: #0A0A0A;
+  background: -webkit-linear-gradient(to right, #0A0A0A, #1A1A1A);
+  background: -webkit-gradient(linear, left top, right top, from(#0A0A0A), to(#1A1A1A));
+  background: -webkit-linear-gradient(left, #0A0A0A, #1A1A1A);
+  background: -o-linear-gradient(left, #0A0A0A, #1A1A1A);
+  background: linear-gradient(to right, #0A0A0A, #1A1A1A);
+}
+
+.header-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #0A0A0A;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  -o-transition: transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.header-navigation ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.header-navigation ul li a {
+  display: block;
+  padding: 1em 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu-icon {
+  cursor: pointer;
+  border: none;
+  background-color: initial;
+  margin-right: .75em;
+  outline: none;
+}
+
+.brand {
+  background: #00A86B;
+  background: -webkit-linear-gradient(to bottom right, #50C878, #00A86B);
+  background: -webkit-gradient(linear, left top, right bottom, from(#50C878), to(#00A86B));
+  background: -webkit-linear-gradient(top left, #50C878, #00A86B);
+  background: -o-linear-gradient(top left, #50C878, #00A86B);
+  background: linear-gradient(to bottom right, #50C878, #00A86B);
+  min-width: 65px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brand img {
+  margin: auto;
+  height: 50px;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0))),
+                    url(../images/happy-woman-walking-on-road.jpg);
+  background-image: -webkit-linear-gradient(left, black, rgba(0, 0, 0, 0)),
+                    url(../images/happy-woman-walking-on-road.jpg);
+  background-image: -o-linear-gradient(left, black, rgba(0, 0, 0, 0)),
+                    url(../images/happy-woman-walking-on-road.jpg);
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)),
+                    url(../images/happy-woman-walking-on-road.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-inner {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.hero-inner p {
+  font-family: Lusitana, Times, serif;
+  margin: 2em 0;
+}
+
+.hero-line {
+  display: block;
+  margin: 0 auto 2em auto;
+  width: 60px;
+  height: 3px;
+  background-color: #00A86B;
+}
+
+.about {
+  text-align: center;
+  font-family: Lusitana, Times, serif;
+}
+
+.about img {
+  width: 75px;
+}
+
+.about h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: .75em 0;
+}
+
+.about-section {
+  margin: 2.5em 0;
+}
+
+.footer {
+  background: #00A86B;
+  background: -webkit-linear-gradient(to left, #50C878, #00A86B);
+  background: -webkit-gradient(linear, right top, left top, from(#50C878), to(#00A86B));
+  background: -webkit-linear-gradient(right, #50C878, #00A86B);
+  background: -o-linear-gradient(right, #50C878, #00A86B);
+  background: linear-gradient(to left, #50C878, #00A86B);
+  padding: 1.25em 0;
+  color: white;
+  font-family: Lusitana, Times, serif;
+}
+
+.footer-navigation ul.flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-navigation li + li {
+  margin-left: 2.5em;
+  position: relative;
+}
+
+.footer-navigation li + li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -1.35em;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: white;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.support h1, .hotline h1 {
+  padding-top: 35%;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: Lusitana, Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.support-team {
+  list-style: none;
+  text-align: center;
+}
+
+.support-member {
+  margin: 2em 0;
+}
+
+.support-member-image img {
+  width: 120px;
+}
+
+.support-member-info h2 {
+  font-size: 1.5em;
+}
+
+.support-member-info p {
+  margin-top: .25em;
+  font-family: Lusitana, Times, serif;
+}
+
+.support-member-contact {
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.support-member-contact li img {
+  width: 30px;
+}
+
+.support-member-contact li + li {
+  margin-left: 1.75em;
+}
+
+.hotline-contacts {
+  text-align: center;
+  list-style: none;
+}
+
+.hotline-contact {
+  margin: 1.5em 0;
+}
+
+.hotline-contact-header img {
+  width: 120px;
+}
+
+.hotline-contact-header h2 {
+  font-size: 1.75em;
+}
+
+.hotline-contacts-list {
+  margin-top: 2em;
+  list-style: none;
+  font-family: Lusitana, Times, serif;
+}
+
+.hotline-contacts-list li + li {
+  margin-top: 1.25em;
+}
+
+.hotline-contacts-list p {
+  margin: 0;
+}
+
+.hotline-contact-name {
+  color: #00A86B;
+}
+
+.hotline-contact-name a {
+  font-weight: 700;
+}
+
+.hotline-contact-number {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px) {
+  .page-header .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-navigation ul li a:hover {
+    background: #00A86B;
+    background: -webkit-linear-gradient(to right, #50C878, #00A86B);
+    background: -webkit-gradient(linear, left top, right top, from(#50C878), to(#00A86B));
+    background: -webkit-linear-gradient(left, #50C878, #00A86B);
+    background: -o-linear-gradient(left, #50C878, #00A86B);
+    background: linear-gradient(to right, #50C878, #00A86B);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .flex--medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .page-header {
+    top: 2.5em;
+  }
+
+  .page-header-inner {
+    -webkit-box-shadow: 7px 7px 12px 0px rgba(0, 0, 0, .16);
+    box-shadow: 7px 7px 12px 0px rgba(0, 0, 0, .16);
+  }
+
+  .brand {
+    -webkit-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, .16);
+    box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, .16);
+    border-radius: 65px;
+    -webkit-transform: scale(1.75);
+        -ms-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+
+  .brand img {
+    -webkit-transform: scale(.75);
+        -ms-transform: scale(.75);
+            transform: scale(.75)
+  }
+
+  .header-navigation {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    position: static;
+    background-color: initial;
+    margin-right: 2em;
+  }
+
+  .header-navigation ul.flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .header-navigation ul li + li {
+    margin-left: 3em;
+  }
+
+  .header-navigation ul li a {
+    display: block;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2.2em;
+  }
+
+  .hero-inner p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-section {
+    margin: 5em 0;
+  }
+
+  .support-team {
+    text-align: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .hotline-contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .hotline-contact {
+    margin: 3em 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+
+  .support-member {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3em 0;
+  }
+
+  .support h1, .hotline h1 {
+    font-size: 2em;
+    padding-top: 23%;
+  }
+
+  .support-member-contact li img {
+    width: 20px;
+  }
+
+  .support-member-contact li + li {
+    margin-left: 1.25em;
+  }
+
+  .support-member-image {
+    margin-right: 1em;
+  }
+
+  .support-member-contact {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
