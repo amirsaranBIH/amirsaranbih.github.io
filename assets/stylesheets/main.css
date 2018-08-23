@@ -650,6 +650,10 @@ img {
     text-decoration: underline
 }
 
+.project h3 {
+  margin-bottom: 10px;
+}
+
 .testimonial {
     min-height: 150px
 }
