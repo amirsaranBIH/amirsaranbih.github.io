@@ -413,6 +413,10 @@ select {
     padding: 30px 0
 }
 
+#testimonials-list h2 {
+  text-align: center;
+}
+
 .section-header h2 {
     color: var(--yellow)
 }
