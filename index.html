@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
   </head>
 
@@ -67,17 +68,17 @@
     <section class="project-categories">
       <div class="wrapper">
         <div class="project-categories-list">
-          <a class="project-category" href="projects.html?category=client" title="View all projects done for clients">
+          <a data-aos="fade-down" data-aos-duration="1000" class="project-category" href="projects.html?category=client" title="View all projects done for clients">
             <h3>Client Work</h3>
             <div class="project-category-line"></div>
           </a>
 
-          <a class="project-category" href="projects.html?category=personal" title="View all my personal projects">
+          <a data-aos="fade-down" data-aos-duration="1500" class="project-category" href="projects.html?category=personal" title="View all my personal projects">
             <h3>Personal Work</h3>
             <div class="project-category-line"></div>
           </a>
 
-          <a class="project-category" href="projects.html?category=design" title="View all graphic design projects">
+          <a data-aos="fade-down" data-aos-duration="2000" class="project-category" href="projects.html?category=design" title="View all graphic design projects">
             <h3>Graphic Design</h3>
             <div class="project-category-line"></div>
           </a>
@@ -100,37 +101,37 @@
           </div>
 
           <div class="features-list">
-            <div class="feature">
+            <div data-aos="fade-right" data-aos-duration="2000" class="feature">
               <img src="assets/images/features/effective-code.png" alt="Effective Code">
               <h3>Effective Code</h3>
               <p>My code is well formated and optimized for the best performance.</p>
             </div>
 
-            <div class="feature">
+            <div data-aos="fade-down" data-aos-duration="2000" class="feature">
               <img src="assets/images/features/creative-design.png" alt="Creative Design">
               <h3>Creative Design</h3>
               <p>Every design is different and creative in its own unique way.</p>
             </div>
 
-            <div class="feature">
+            <div data-aos="fade-left" data-aos-duration="2000" class="feature">
               <img src="assets/images/features/communication.png" alt="Communication">
               <h3>Communication</h3>
               <p>I am super active every day so communication is very easy with me.</p>
             </div>
 
-            <div class="feature">
+            <div data-aos="fade-right" data-aos-duration="2000" class="feature">
               <img src="assets/images/features/seo-prioritized.png" alt="SEO Prioritized">
               <h3>SEO Prioritized</h3>
               <p>Using modern SEO techniques I love to make page rank higher on Google.</p>
             </div>
 
-            <div class="feature">
+            <div data-aos="fade-up" data-aos-duration="2000" class="feature">
               <img src="assets/images/features/responsive-layout.png" alt="Responsive Layout">
               <h3>Responsive Layout</h3>
               <p>Websites are made with modern CSS techniques and can be viewed on all platforms.</p>
             </div>
 
-            <div class="feature">
+            <div data-aos="fade-left" data-aos-duration="2000" class="feature">
               <img src="assets/images/features/quick-turnaround.png" alt="Quick Turnaround">
               <h3>Quick Turnaround</h3>
               <p>I start projects immidiately and you get your website quick when you order it.</p>
@@ -149,7 +150,7 @@
         </header>
 
         <div class="skills-content">
-          <div class="skill">
+          <div data-aos="fade-down" data-aos-duration="2000" class="skill">
             <img src="assets/images/skills/skill-back-end.png" alt="Back-End Development">
             <h3>Back End</h3>
             <p>Using languages like NodeJS and PHP I can make dynamic websites and code complex systems.</p>
@@ -157,7 +158,7 @@
             <a href="projects.html" title="View all my back-end development projects">View Projects</a>
           </div>
 
-          <div class="skill">
+          <div data-aos="fade-down" data-aos-duration="1500" class="skill">
             <img src="assets/images/skills/skill-front-end.png" alt="Front-End Development">
             <h3>Front End</h3>
             <p>Front-end development is my specility. I love writing semantic HTML and short CSS styles.</p>
@@ -165,7 +166,7 @@
             <a href="projects.html" title="View all my front-end development projects">View Projects</a>
           </div>
 
-          <div class="skill">
+          <div data-aos="fade-down" data-aos-duration="2000" class="skill">
             <img src="assets/images/skills/skill-design.png" alt="Graphic Design">
             <h3>Graphic Design</h3>
             <p>Graphic design is a side passion for me. I love solving design problems and thinking deep about it.</p>
@@ -184,7 +185,7 @@
           <p>Reviews left by clients that worked with me</p>
         </header>
 
-        <div class="testimonials-content">
+        <div data-aos="fade-in" data-aos-duration="1000" class="testimonials-content">
           <div class="testimonials-slider">
             <img src="assets/images/quote.png" alt="">
             <div class="testimonial">
@@ -306,6 +307,22 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      if (document.querySelector('.testimonials-slider .testimonial')) {
+          var testimonials = Array.from(document.querySelectorAll('.testimonials-slider .testimonial'));
+          testimonials[1].style.display = 'none', testimonials[2].style.display = 'none';
+          var counter = 1;
+
+          function testimonialSlider() {
+              testimonials.forEach(function(e, t) {
+                  e.style.display = counter !== t ? 'none' : 'block'
+              }), counter === testimonials.length - 1 ? counter = 0 : counter++
+          }
+          setInterval(testimonialSlider, 5e3)
+      }
+    </script>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>

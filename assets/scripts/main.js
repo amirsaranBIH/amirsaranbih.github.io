@@ -1,4 +1,3 @@
-document.getElementsByClassName('svg-1')[0] && document.getElementsByClassName('svg-2')[0] && (document.getElementsByClassName('svg-1')[0].children[0].points[1].x = window.innerWidth, document.getElementsByClassName('svg-2')[0].children[0].points[1].x = window.innerWidth);
 var navigation = document.getElementsByClassName('header-navigation')[0],
     menuIcon = document.getElementById('menu-icon');
 
@@ -21,16 +20,4 @@ if (menuIcon.addEventListener('click', function() {
             e.value === search[1] && (categoryFilter.selectedIndex = t, displayProjectCategory(e.value))
         })
     }
-}
-if (document.querySelector('.testimonials-slider .testimonial')) {
-    var testimonials = Array.from(document.querySelectorAll('.testimonials-slider .testimonial'));
-    testimonials[1].style.display = 'none', testimonials[2].style.display = 'none';
-    var counter = 1;
-
-    function testimonialSlider() {
-        testimonials.forEach(function(e, t) {
-            e.style.display = counter !== t ? 'none' : 'block'
-        }), counter === testimonials.length - 1 ? counter = 0 : counter++
-    }
-    setInterval(testimonialSlider, 5e3)
 }
