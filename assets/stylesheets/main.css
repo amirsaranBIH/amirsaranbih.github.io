@@ -56,12 +56,6 @@ sup {
     transition: transform .4s ease-out, -webkit-transform .4s ease-out
 }
 
-.btn,
-.project-category {
-    -webkit-box-shadow: var(--shadow);
-    box-shadow: var(--shadow)
-}
-
 #cta,
 #hero,
 .project-category {
@@ -451,12 +445,6 @@ select {
     background-color: var(--blue)
 }
 
-.btn:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1)
-}
-
 img {
     border-style: none;
     max-width: 100%
@@ -490,7 +478,8 @@ img {
 .hero-content h2 {
     font-weight: 400;
     font-size: 1.266em;
-    margin: 1%
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 #header {
@@ -659,7 +648,7 @@ img {
 }
 
 .testimonial {
-    min-height: 150px
+    min-height: 160px
 }
 
 .testimonial-item {
@@ -745,8 +734,12 @@ img {
     color: var(--white)
 }
 
+.about-description h2 {
+    margin-bottom: .5em;
+}
+
 .project {
-    padding-bottom: 50px
+    padding-bottom: 75px
 }
 
 .project img {
@@ -769,15 +762,18 @@ img {
 .project p,
 .projects h2,
 .skill-list h2 {
-    margin-bottom: 10px
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
 .project-tags ul li {
+    font-size: 13px;
     margin-top: 5px;
     padding: 2px 8px;
     background-color: var(--lightBlue);
-    color: var(--white);
-    margin-right: 5px
+    color: white;
+    margin-right: 5px;
+    border-radius: 20px;
 }
 
 .project-tags ul li:last-of-type {
@@ -904,7 +900,7 @@ img {
         -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
         clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
         background-size: cover;
-        padding: 100px 0
+        padding: 250px 0
     }
     .features-list {
         display: flex;
@@ -993,7 +989,7 @@ img {
         font-size: 1.424em
     }
     #hero {
-        height: 80vh;
+        height: 72vh;
         background-image: url(../images/background/extra-large/development.jpg)
     }
     #cta {
