@@ -335,10 +335,9 @@ template {
 
 :root {
     --blue: #2191fb;
-    --yellow: #eccd0b;
+    --yellow: #ffdd00;
     --grey: #71777d;
-    --lightBlue: #6fc5dd;
-    --white: #f5f5f5;
+    --lightBlue: #40c4e9;
     --shadow: 0 0 10px 2px rgba(1, 1, 1, .25)
 }
 
@@ -412,14 +411,15 @@ select {
 }
 
 .section-header h2 {
-    color: var(--yellow)
+    color: var(--yellow);
+    margin-bottom: .25em;
 }
 
 #features,
 #hero,
 .btn,
 .project-category {
-    color: var(--white)
+    color: #fff
 }
 
 .section-header h3 {
@@ -432,6 +432,10 @@ select {
     background-color: var(--yellow);
     font-weight: 700;
     transition: all .2s ease;
+}
+
+.btn:hover {
+    border-radius: 25px;
 }
 
 #header,
@@ -567,7 +571,7 @@ img {
 .project-category-line {
     width: 35px;
     height: 3px;
-    background-color: var(--white);
+    background-color: #fff;
     margin: 15px auto
 }
 
@@ -671,7 +675,7 @@ img {
 
 #cta,
 #footer-section {
-    color: var(--white)
+    color: #fff
 }
 
 #cta {
@@ -731,7 +735,7 @@ img {
 #footer {
     padding: 15px;
     background-color: var(--blue);
-    color: var(--white)
+    color: #fff
 }
 
 .about-description h2 {
@@ -781,6 +785,7 @@ img {
 }
 
 .list-content ul {
+    margin-top: 1em;
     list-style-type: circle;
     padding-left: 35px;
     color: var(--blue)
