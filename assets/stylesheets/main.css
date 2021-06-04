@@ -633,7 +633,8 @@ img {
 
 .skill a {
     color: var(--yellow);
-    text-decoration: underline
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .skill a:hover {
@@ -802,6 +803,12 @@ img {
 
 .cv-link {
     color: var(--blue);
+    text-decoration: underline;
+}
+
+.testimonials-cta,
+.projects-cta {
+    text-transform: uppercase;
     text-decoration: underline;
 }
 
